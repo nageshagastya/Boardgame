@@ -1,18 +1,18 @@
 pipeline {
     agent any
-    	tools {
+    	
+	tools {
 		jdk 'jdk17'
 		maven 'maven3.9'
 	}
 
     node('SlaveNode') {
-		stages {
-			stage('Package') {
-				steps {
-					sh 'mvn package'
-				}
+		stage('Package') {
+			steps {
+				sh 'mvn package'
 			}
 		}
+		
     }
     
 }
