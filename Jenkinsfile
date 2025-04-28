@@ -3,13 +3,13 @@ pipeline {
     {
         
     }
+	
+	tools {
+		jdk 'jdk17'
+		maven 'maven3.9'
+	}
 
     node('SlaveNode') {
-		tools {
-			jdk 'jdk17'
-			maven 'maven3.9'
-		}
-
 		stages {
 			stage('Package') {
 				steps {
