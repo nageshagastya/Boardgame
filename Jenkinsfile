@@ -1,7 +1,5 @@
 pipeline {
-    agent {
-		label "SlaveNode"
-	}
+    agent any
 
 	
 	tools {
