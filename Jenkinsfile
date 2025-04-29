@@ -2,7 +2,8 @@ pipeline {
     agent {
 		label "SlaveNode"
 	}
-    	
+
+	
 	tools {
 		jdk 'jdk17'
 		maven 'maven3.9'
